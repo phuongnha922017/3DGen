@@ -1,0 +1,4 @@
+name: 3dgen
+channels:
+  - defaults
+prefix: /home/vietai/miniconda3/envs/3dgen
