@@ -11,22 +11,24 @@
 
 ## Table of Contents
 
+- [RealFusion: 360° Reconstruction of Any Object from a Single Image](#realfusion-360-reconstruction-of-any-object-from-a-single-image)
+  - [CVPR 2023](#cvpr-2023)
 - [Table of Contents](#table-of-contents)
 - [Overview](#overview)
-  * [Code Overview](#code-overview)
-  * [Abstract](#abstract)
-  * [Examples](#examples)
-  * [Method](#method)
-  * [A Quick Note](#a-quick-note)
+  - [Code Overview](#code-overview)
+  - [Abstract](#abstract)
+  - [Examples](#examples)
+  - [Method](#method)
+  - [A Quick Note](#a-quick-note)
 - [Running the code](#running-the-code)
-  * [Dependencies](#dependencies)
-  * [Data](#data)
-  * [Textual Inversion](#textual-inversion)
-  * [Side note: Textual Inversion Initialization](#side-note--textual-inversion-initialization)
-  * [Reconstruction](#reconstruction)
-  * [Examples](#examples-1)
-  * [Extra tips](#extra-tips)
-  * [Pretrained checkpoints](#pretrained-checkpoints)
+  - [Dependencies](#dependencies)
+  - [Data](#data)
+  - [Textual Inversion](#textual-inversion)
+  - [Side note: Textual Inversion Initialization](#side-note-textual-inversion-initialization)
+  - [Reconstruction](#reconstruction)
+  - [Examples](#examples-1)
+  - [Extra tips](#extra-tips)
+  - [Pretrained checkpoints](#pretrained-checkpoints)
 - [Further Improvements](#further-improvements)
 - [Tips for Researchers](#tips-for-researchers)
 - [Contribution](#contribution)
@@ -127,7 +129,7 @@ python textual_inversion.py \
   --placeholder_token="_cat_statue_" \
   --initializer_token="cat" \
   --resolution=512 \
-  --train_batch_size=1 \
+  --train_batch_size=16 \
   --gradient_accumulation_steps=4 \
   --max_train_steps=3000 \
   --learning_rate=5.0e-04 --scale_lr \

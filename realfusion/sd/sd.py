@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from diffusers.models.autoencoder_kl import AutoencoderKL
-from diffusers.models.unet_2d_condition import UNet2DConditionModel
+from diffusers.models.autoencoders.autoencoder_kl import AutoencoderKL
+from diffusers.models.unets.unet_2d_condition import UNet2DConditionModel
 from diffusers.schedulers.scheduling_pndm import PNDMScheduler
 from transformers import CLIPTextModel, CLIPTokenizer
 

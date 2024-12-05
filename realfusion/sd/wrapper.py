@@ -5,9 +5,9 @@ from typing import List, Optional, Sequence, Tuple, Union
 
 import torch
 from diffusers.configuration_utils import ConfigMixin
-from diffusers.models.autoencoder_kl import AutoencoderKL
-from diffusers.models.unet_2d_condition import UNet2DConditionModel
-from diffusers.pipeline_utils import DiffusionPipeline
+from diffusers.models.autoencoders.autoencoder_kl import AutoencoderKL
+from diffusers.models.unets.unet_2d_condition import UNet2DConditionModel
+from diffusers.pipelines.pipeline_utils import DiffusionPipeline
 from diffusers.schedulers.scheduling_ddim import DDIMScheduler
 from diffusers.schedulers.scheduling_ddpm import DDPMScheduler
 from diffusers.schedulers.scheduling_dpmsolver_multistep import \

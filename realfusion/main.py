@@ -24,6 +24,7 @@ def main():
     seed_everything(opt.seed)
     print(opt)
     Path(opt.workspace).mkdir(exist_ok=(opt.ckpt != 'scratch'), parents=True)
+    print('workspace', opt.workspace)
     opt.save(str(Path(opt.workspace) / 'config.json'))
     (Path(opt.workspace) / 'command.txt').write_text(subprocess.list2cmdline(sys.argv[1:]))
 
